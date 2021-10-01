@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ex00.c                                             :+:      :+:    :+:   */
+/*   ex01.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/30 19:06:17 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/10/01 15:34:27 by igomes-h         ###   ########.fr       */
+/*   Created: 2021/09/30 19:49:39 by igomes-h          #+#    #+#             */
+/*   Updated: 2021/10/01 15:52:44 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,54 +14,54 @@
 
 #include <stdio.h>
 
-// Recursive
-int func1(int n)
+// Iterative
+int sum_i(int a, int b)
 {
-	if (n <= 0)
-		return (0);
-	return (n + func1(n-1));
+	while (b > 0)
+	{
+		b--;
+		a++;
+	}
+	return (a);
 }
 
-// Iterative
-int func2(int n)
+// Recursive
+int sum_r(int a, int b)
 {
-	int tmp = 0;
-
-	while (n > 0)
-	{
-		tmp += n;
-		n--;
-	}
-
-	return (tmp);
+	if (b < 0)
+		return (0);
+	if (a == 0)
+		return (b);
+	if (b == 0)
+		return (a);
+	return (sum_r(++a, --b));
 }
 
 int main()
 {
 	// Test 1
-	printf("%i", func1(5));
+	printf("%i", sum_i(5, 6));
 	printf("%c", '\n');
-	printf("%i", func2(5));
+	printf("%i", sum_r(5, 6));
 	printf("%s", "\n--\n");
 	// Test 2
-	printf("%i", func1(25));
+	printf("%i", sum_i(5, 0));
 	printf("%c", '\n');
-	printf("%i", func2(25));
+	printf("%i", sum_r(5, 0));
 	printf("%s", "\n--\n");
 	// Test 3
-	printf("%i", func1('a'));
+	printf("%i", sum_i(0, 3));
 	printf("%c", '\n');
-	printf("%i", func2('a'));
+	printf("%i", sum_r(0, 3));
 	printf("%s", "\n--\n");
 	// Test 4
-	printf("%i", func1(0));
+	printf("%i", sum_i(-1, 0));
 	printf("%c", '\n');
-	printf("%i", func2(0));
+	printf("%i", sum_r(-1, 0));
 	printf("%s", "\n--\n");
 	// Test 5
-	printf("%i", func1(0-8));
+	printf("%i", sum_i(0, -1));
 	printf("%c", '\n');
-	printf("%i", func2(0-8));
-	printf("%c", '\n');
-	return (0);
+	printf("%i", sum_r(0, -1));
+	printf("%s", "\n--\n");
 }

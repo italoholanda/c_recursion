@@ -18,6 +18,16 @@ int func (int n)
 	return (n + func(n-1));
 }
 ```
+<h3>
+	<a href="./ex01.c">Exercise 01</a>
+</h3>
+
+Write the following functions. They all take two integers as params `a, b > 0` and return an integer.
+
+- Sum_I) An iterative function that returns `a + b`;
+- Sum_R) An recursive function that returns `a + b`;
+- Multi_I) An iterative function that returns `a * b`;
+- Multi_R) An recursive function that returns `a * b`;
 
 > #DataStructures
 > #ComputerScience
