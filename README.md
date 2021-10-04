@@ -23,7 +23,7 @@ int func (int n)
 </h3>
 
 Write the following functions. They all take two integers as params `a, b > 0` and return an integer.
-You can only use the arithmetic operators `-` and `+`. And Else is banned.
+You can only use this arithmetic operators: `-` and `+`.
 
 - Sum_I) An iterative function that returns `a + b`;
 - Sum_R) An recursive function that returns `a + b`;
