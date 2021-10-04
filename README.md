@@ -25,10 +25,10 @@ int func (int n)
 Write the following functions. They all take two integers as params `a, b > 0` and return an integer.
 You can only use these arithmetic operators: `-` and `+`.
 
-- Sum_I) An iterative function that returns `a + b`;
-- Sum_R) An recursive function that returns `a + b`;
-- Multi_I) An iterative function that returns `a * b`;
-- Multi_R) An recursive function that returns `a * b`;
+- **sum_I()** An iterative function that returns `a + b`;
+- **sum_R()** An recursive function that returns `a + b`;
+- **multi_I()** An iterative function that returns `a * b`;
+- **multi_R()** An recursive function that returns `a * b`;
 
 <h3>
 	<a href="./ex02.c">Exercise 02</a>
@@ -36,8 +36,8 @@ You can only use these arithmetic operators: `-` and `+`.
 
 Create the following recursive functions:
 
-- smallest_digit) returns the smallest digit of an integer;
-- biggest_digit) returns the biggest digit of an integer;
+- **smallest_digit()** returns the smallest digit of an integer;
+- **biggest_digit()** returns the biggest digit of an integer;
 
 ```
 // Exemple:
