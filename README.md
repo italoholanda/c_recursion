@@ -30,6 +30,21 @@ You can only use the arithmetic operators `-` and `+`. And Else is banned.
 - Multi_I) An iterative function that returns `a * b`;
 - Multi_R) An recursive function that returns `a * b`;
 
+<h3>
+	<a href="./ex02.c">Exercise 02</a>
+</h3>
+
+Create the following recursive functions:
+
+- smallest_digit) returns the smallest digit of an integer;
+- biggest_digit) returns the biggest digit of an integer;
+
+```
+// Exemple:
+smallest_digit(1234); // returns 1
+biggest_digit(1234); // returns 4
+```
+
 > #DataStructures
 > #ComputerScience
 > #C
